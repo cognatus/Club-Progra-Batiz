@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]>
+Necesitamos Diseñador de Interfez URGENTE!!!!
+<![endif]-->
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <title>Sesion 1 03/10/15</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Sesion 1 03/10/15</h1>
+        <h2>Sesion en la que se explico como realizar un Hola Mundo y una Calculadora Basica con Java</h2>
+        <a href="https://github.com/cognatus/EjerciciosClubProgra/tree/Sesion1" class="button"><small>Ver codigo fuente en</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hola Mundo y Suma de dos digitos</h3>
+
+<p>A continuacion les mostramos los dos programas realizamdos en la sesion de hoy.</p>
+
+<p>Programa que lee e imprime el nombre del usuario</p>
+<pre><code>
+import java.util.Scanner;
+
+public class Hola{
+
+  public static void main(String[] args) {
+
+    Scanner leer = new Scanner(System.in);
+    String nombre = "";
+
+    System.out.println("Ingresa tu nombresini: ");
+    nombre = leer.nextLine();
+
+    System.out.println("Hola "+nombre);
+    
+  }
+  
+}</code></pre>
+
+<p>Calculadora que suma dos digitos</p>
+<pre><code>
+import java.util.Scanner;//importamos el Scanner que leera lo que el usuario ponga
+
+public class Calcu{
+
+  public static void main(String[] args){
+
+    int a;//Variable tipo entero del primer numero
+    int b;//Variable tipo entero del segundo numero
+    int suma;//Variable tipo entero del resultado de la suma
+    Scanner leer = new Scanner(System.in);//Iniciamos creando el Objeto Scanner que leera los datos
+
+    System.out.println("Ingrese un numero 7u7");
+    a = leer.nextInt();//Obtiene el 1er numero
+    System.out.println("Ingrese otro numero numero 7u7");
+    b = leer.nextInt();//Obtiene el 2do numero
+
+    suma = a + b;//realiza la suma y la guarda en la variable suma
+
+    System.out.println("El resultado de la suma es: " + suma);//imprime el resultado de la suma
+
+  }
+                
+}</code></pre>
+        </section>
+
+        <aside id="sidebar">
+          
+          <p class="repo-owner">Descarga ambos programas.</p>
+
+          <a href="https://github.com/cognatus/EjerciciosClubProgra/zipball/Sesion1" class="button">
+            <small>Descarga en</small>
+            .zip
+          </a>
+          <a href="https://github.com/cognatus/EjerciciosClubProgra/tarball/Sesion1" class="button">
+            <small>Descarga en</small>
+            .tar.gz
+          </a>
+
+          <br>
+          <br>
+          <br>
+
+          <a href="https://www.facebook.com/ClubPr0gra" class="face"><img src="../images/facebook.png">
+          </a>
+
+          <p class="repo-owner">Contactanos mediante nuestra Pagina de Facebook, <a href="https://www.facebook.com/ClubPr0gra">Club de Programacón Batiz</a>.</p>
+
+          <br>
+          <br>
+          <br>
+
+          <p class="repo-owner">Pagina principal.</p>
+          <a href="../index.html" class="face"><img src="../images/home.png">
+          </a>
+
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
