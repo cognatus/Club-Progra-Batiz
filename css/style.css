@@ -30,7 +30,7 @@ header{
 	color: white;
 	text-align: right;
 	padding-right: 10%;
-	padding-top: 10%;
+	padding-top: 8%;
 	font-size: 70px;
 }
 
@@ -82,4 +82,13 @@ h4{
 div h5{
 	text-decoration: bold;
 	font-style: Tahoma;
+}
+
+.subtitulo{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.letra{
+	font-family: 'Exo', sans-serif;
+	text-decoration: bold;
 }
