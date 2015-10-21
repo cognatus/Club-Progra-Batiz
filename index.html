@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Club de programación de Batiz</title>
+
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+  	<link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+
+	<!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+	<header>
+		<div class="titulo">
+			<h2 class="club">Club de programación de Batiz</h2>
+		</div>	
+		<div class="contacto">
+			<a href="https://www.facebook.com/ClubPr0gra" ><img id="lF" title="Contactanos con facebook" src="img/facebook.png"></a>
+			<br><br><br>
+			<a href="https://github.com/cognatus/Club-Progra-Batiz"><img id="lG" title="Ver codigo de la página" src="img/github.png"></a>
+		</div>
+	</header>
+
+   <!--Practicas-->
+	<div id="practicas">
+	<center><h3>Practicas</h3></center>
+
+		<!--Como instalar JDK--> 
+		<div class="row">
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title black-text">¿Como instalar JDK de java?</span>
+              <p>Sesion en la que se explico como realizar un Hola Mundo y una Calculadora Basica con Java</p>
+            </div>
+            <div class="card-action">
+              <button data-target="JDK" class="btn modal-trigger">Ver</button>
+            </div>
+          </div>
+        </div>
+
+			<!-- Modal -->
+			<div id="JDK" class="modal modal-fixed-footer">
+    			<div class="modal-content">
+      				<h4>¿Como instalar JDK de java?</h4>
+			        <p>Primero que nada, deben de ir a esta <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html?ssSourceSiteId=otnes">direccion</a> y descargar el JDK segun las caracteristicas de su computadora.</p>
+			       	<p>Despues de eso, deben de agregar los comandos a la consola para que puedan ejecutar y compilar programas desde ahí.</p>
+			       	<p>Para ello les dejo este video que explica bien como agregar dichos comandos a la consola. Ese tutorial fue hecho para Windows 7, pero para Windows 8 y 10 es lo mismo.</p>
+			       	<div class="video-container">
+						<iframe width="1102" height="620" src="https://www.youtube.com/embed/LMr4UKhXazY" frameborder="0" allowfullscreen></iframe>
+					</div>
+   				</div>
+    			<div class="modal-footer">
+      				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    			</div>
+  			</div>
+
+			       	
+		<!--3 de Octubre-->
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title black-text">3 de Octubre 2015</span>
+              <p>Sesion en la que se explico como realizar un Hola Mundo y una Calculadora Basica con Java</p>
+            </div>
+            <div class="card-action">
+              <button data-target="3oct" class="btn modal-trigger">Ver</button>
+            </div>
+          </div>
+        </div>
+      	</div>
+
+			<!-- Modal -->
+			<div id="3oct" class="modal modal-fixed-footer">
+    			<div class="modal-content">
+      				<h4>3 de Octubre</h4>
+					<p>A continuacion les mostramos los dos programas realizamdos en esta sesión.</p>
+					<p><b>Programa que lee e imprime el nombre del usuario</b></p>
+<pre class="language-markup">
+<code>
+import java.util.Scanner;
+
+public class Hola{
+
+  public static void main(String[] args) {
+
+    Scanner leer = new Scanner(System.in);
+    String nombre = "";
+
+    System.out.println("Ingresa tu nombresini: ");
+    nombre = leer.nextLine();
+
+    System.out.println("Hola "+nombre);
+    
+  }
+  
+}</code>
+</pre>
+
+					<p><b>Calculadora que suma dos digitos</b>/p>
+<pre>
+<code>
+import java.util.Scanner;//importamos el Scanner que leera lo que el usuario ponga
+
+public class Calcu{
+
+  public static void main(String[] args){
+
+    int a;//Variable tipo entero del primer numero
+    int b;//Variable tipo entero del segundo numero
+    int suma;//Variable tipo entero del resultado de la suma
+    Scanner leer = new Scanner(System.in);//Iniciamos creando el Objeto Scanner que leera los datos
+
+    System.out.println("Ingrese un numero 7u7");
+    a = leer.nextInt();//Obtiene el 1er numero
+    System.out.println("Ingrese otro numero numero 7u7");
+    b = leer.nextInt();//Obtiene el 2do numero
+
+    suma = a + b;//realiza la suma y la guarda en la variable suma
+
+    System.out.println("El resultado de la suma es: " + suma);//imprime el resultado de la suma
+
+  }
+                
+}</code>
+</pre>
+    			</div>
+    			<div class="modal-footer">
+      				<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+      				<a href="https://github.com/cognatus/EjerciciosClubProgra/zipball/Sesion1" class="modal-action waves-effect waves-green btn-flat ">Descargar</a>
+      				<a href="https://github.com/cognatus/EjerciciosClubProgra/tree/Sesion1">GitHub</a>
+    			</div>
+  			</div>
+
+<!--jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!--Materialize-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<!--<script type="text/javascript" src="js/leanModal.js"></script>-->
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+
+</body>
+</html>
